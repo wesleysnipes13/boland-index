@@ -6,5 +6,5 @@ export default defineConfig({
   plugins: [react()],
   // IMPORTANT: If deploying to https://username.github.io/repo-name/
   // you must uncomment the line below and replace 'repo-name' with your repository name
-  // base: '/repo-name/',
+  base: '/Boland-Index/',
 });

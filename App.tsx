@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import { useState } from 'react';
 import { QUESTIONS } from './data';
-import { Scores, AppView, Category } from './types';
+import { Scores, AppView } from './types';
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, ResponsiveContainer, PolarRadiusAxis } from 'recharts';
 import LongevityGuide from './components/LongevityGuide';
 import { ArrowRight, RotateCcw } from 'lucide-react';
@@ -17,7 +17,6 @@ export default function App() {
   const [view, setView] = useState<AppView>(AppView.LANDING);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [scores, setScores] = useState<Scores>(INITIAL_SCORES);
-  const [history, setHistory] = useState<number[]>([]); // To allow undo if needed, or simply track interaction
 
   const currentQuestion = QUESTIONS[currentQuestionIndex];
 
