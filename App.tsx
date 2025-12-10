@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { QUESTIONS } from './data';
-import { Scores, AppView } from './types';
+import { Scores, AppView, Category } from './types';
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, ResponsiveContainer, PolarRadiusAxis } from 'recharts';
 import LongevityGuide from './components/LongevityGuide';
 import { ArrowRight, RotateCcw } from 'lucide-react';
