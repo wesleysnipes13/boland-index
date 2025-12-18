@@ -204,7 +204,7 @@ export default function App() {
   };
 
   const handleNativeShare = async () => {
-    if (navigator.share) {
+    if (typeof navigator.share === 'function') {
       try {
         await navigator.share(shareData);
       } catch (err) {
